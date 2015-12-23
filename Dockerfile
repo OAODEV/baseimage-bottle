@@ -12,7 +12,7 @@ RUN apk update && \
       python3-dev
 RUN pip3 install --upgrade pip && \
     pip3 install bottle \
-                 git+https://github.com/OAODEV/config-finder.git@master
+                 git+https://github.com/OAODEV/config-finder.git@master \
                  nose \
                  psycopg2
 
