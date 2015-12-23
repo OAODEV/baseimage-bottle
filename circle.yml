@@ -34,6 +34,6 @@ test:
 deployment:
   index:
     branch: /.*/
-      commands:
-        - gcloud docker push us.gcr.io/lexical-cider-93918/$herd_service_name:$herd_build_tag
+    commands:
+      - gcloud docker push us.gcr.io/lexical-cider-93918/$herd_service_name:$herd_build_tag
 
