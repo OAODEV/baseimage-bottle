@@ -5,6 +5,7 @@ MAINTAINER jesse.miller@adops.com
 RUN apk update && \
     apk add --update \
       build-base \
+      git \
       postgresql \
       postgresql-dev \
       python3 \
@@ -20,5 +21,6 @@ RUN pip3 install --upgrade pip && \
 RUN rm -rf ~/.pip/cache/*
 RUN apk del postgresql-dev \
             python3-dev \
+            git \
     && rm -rf /var/cache/apk/* \
     && rm -rf /var/lib/postgresql/data
