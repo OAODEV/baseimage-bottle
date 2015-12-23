@@ -24,3 +24,6 @@ RUN apk del postgresql-dev \
             git \
     && rm -rf /var/cache/apk/* \
     && rm -rf /var/lib/postgresql/data
+
+ADD test_baseimage_bottle.py /test/test_baseimage_bottle.py
+
